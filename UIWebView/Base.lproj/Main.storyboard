@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HoP-lH-ZAC">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="Lkq-LD-91R">
+            <objects>
+                <tableViewController id="HoP-lH-ZAC" customClass="AVTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="100" sectionFooterHeight="28" id="u6w-H4-Nfy">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="PDF-file" id="bUp-xG-EIj">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="o6Z-WV-NLc">
+                                        <rect key="frame" x="0.0" y="100" width="768" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o6Z-WV-NLc" id="VkO-aC-84H">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="199.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEt-7L-REO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.80313405002692972" green="0.80423974232233508" blue="0.6651711212633975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" red="0.25033302460000001" green="0.09167542494" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionFirstPDF:" destination="HoP-lH-ZAC" eventType="touchUpInside" id="hFK-lj-ziI"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mBB-M5-89G">
+                                        <rect key="frame" x="0.0" y="300" width="768" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mBB-M5-89G" id="K2T-Qo-V17">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="199.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElX-tV-SgE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="768" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.80313405000000004" green="0.80423974229999995" blue="0.6651711213" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" red="0.25033302460000001" green="0.09167542494" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionSecondPDF:" destination="HoP-lH-ZAC" eventType="touchUpInside" id="1kx-YQ-IeU"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="URL-resurs" id="DEP-fo-fGU">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="IWa-Bc-Zeo">
+                                        <rect key="frame" x="0.0" y="600" width="768" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IWa-Bc-Zeo" id="WNY-kS-Fbn">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="199.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gxf-Vx-yoq">
+                                                    <rect key="frame" x="0.0" y="-20" width="768" height="219"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.80313405000000004" green="0.80423974229999995" blue="0.6651711213" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" red="0.25033302460000001" green="0.09167542494" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionFirstURL:" destination="HoP-lH-ZAC" eventType="touchUpInside" id="IlT-Ou-L5c"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ly9-Kx-zaY">
+                                        <rect key="frame" x="0.0" y="800" width="768" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ly9-Kx-zaY" id="1Qw-nB-etn">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="199.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pv1-Uu-vyz">
+                                                    <rect key="frame" x="0.0" y="-1" width="768" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.80313405000000004" green="0.80423974229999995" blue="0.6651711213" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" red="0.25033302460000001" green="0.09167542494" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="actionSecondURL:" destination="HoP-lH-ZAC" eventType="touchUpInside" id="8Fc-4g-q6W"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="HoP-lH-ZAC" id="guA-oK-lkf"/>
+                            <outlet property="delegate" destination="HoP-lH-ZAC" id="ReB-ES-akM"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="firstPDF" destination="tEt-7L-REO" id="Ao7-EI-1gE"/>
+                        <outlet property="firstURL" destination="Gxf-Vx-yoq" id="TbJ-SD-Yyi"/>
+                        <outlet property="secondPDF" destination="ElX-tV-SgE" id="6SA-f6-kt1"/>
+                        <outlet property="secondURL" destination="pv1-Uu-vyz" id="BLj-oz-9IN"/>
+                        <segue destination="5R4-4o-qI6" kind="show" identifier="segueShowWeb" id="jch-3R-wOo"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzF-gM-Uc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-666.40625" y="33.984375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ChS-n7-0UK">
+            <objects>
+                <viewController restorationIdentifier="AVViewController" storyboardIdentifier="AVViewController" id="5R4-4o-qI6" customClass="AVViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dgm-Gh-NCq">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dwt-iz-UJh">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="974"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="YES"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="xd5-eu-4vu">
+                                <rect key="frame" x="366" y="494" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="color" red="0.25033302460000001" green="0.09167542494" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kmq-ah-iNO">
+                                <rect key="frame" x="0.0" y="974" width="768" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="cancel" id="5JO-hx-afU">
+                                        <connections>
+                                            <segue destination="HoP-lH-ZAC" kind="show" identifier="segueWeb" id="bn2-K8-4ac"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="241" style="plain" systemItem="fixedSpace" id="umE-Ix-lR7"/>
+                                    <barButtonItem systemItem="rewind" id="jf7-U1-2W3"/>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="TcL-wB-hXE"/>
+                                    <barButtonItem systemItem="fastForward" id="Jfa-dW-Ve9"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="WvZ-pY-wxm"/>
+                                    <barButtonItem systemItem="refresh" id="HH9-W1-i2W"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="RIW-Xf-o8q"/>
+                    </view>
+                    <connections>
+                        <outlet property="barButtonForward" destination="Jfa-dW-Ve9" id="25F-w5-sTj"/>
+                        <outlet property="barButtonRefresh" destination="HH9-W1-i2W" id="FSK-D9-JnG"/>
+                        <outlet property="barButtonRewind" destination="jf7-U1-2W3" id="96Q-ql-01r"/>
+                        <outlet property="indicator" destination="xd5-eu-4vu" id="wE9-yJ-NxA"/>
+                        <outlet property="webView" destination="Dwt-iz-UJh" id="r2l-y3-Oms"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9V2-GM-5RR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8" y="34"/>
+        </scene>
+    </scenes>
+</document>
